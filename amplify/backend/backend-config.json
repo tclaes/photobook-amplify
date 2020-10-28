@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "photobook53dfd8e0": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
