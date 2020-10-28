@@ -13,7 +13,7 @@ export const auth = {
       commit("setUser", null);
       return await Auth.signOut();
     },
-    async login({ commit, dispatch }, { username, password }) {
+    async login({ commit }, { username, password }) {
       try {
         await Auth.signIn({ username, password });
         const userInfo = await Auth.currentUserInfo();
