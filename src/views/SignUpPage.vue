@@ -70,7 +70,6 @@ export default {
   }),
   methods: {
     async signUp() {
-      console.log(this.password);
       if (!this.email || !this.password) {
         return;
       }
