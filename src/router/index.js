@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import { Auth } from "aws-amplify";
 import AlbumsDetailPage from "../views/AlbumsDetailPage.vue";
-import SignUpPage from "../views/SignupPage.vue";
+import SignUpPage from "../views/SignUpPage.vue";
 import AlbumsPage from "../views/AlbumsPage.vue";
 
 Vue.use(VueRouter);
@@ -52,7 +52,7 @@ router.beforeEach(async (to, from, next) => {
   const requiresAuth = to.matched.some(record => record.meta.requiresAuth);
   const isAuthenticated = await Auth.currentUserInfo();
 
-  if (requiresAuth && !isAuthenticated) {
+  if (requiresAuth && !isAuthenticated) { 
     next("/");
   } else {
     next();

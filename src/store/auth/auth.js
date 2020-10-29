@@ -1,7 +1,7 @@
 import { Auth } from "aws-amplify";
 
 export const auth = {
-  namespace: "true",
+  namespaced: "true",
   state: { user: null },
   mutations: {
     setUser(state, payload) {
@@ -33,7 +33,7 @@ export const auth = {
         return Promise.reject(err);
       }
     },
-    async signUp(_, username, password, email) {
+    async signUp(_, { username, password, email }) {
       try {
         await Auth.signUp({
           username,

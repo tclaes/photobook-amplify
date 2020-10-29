@@ -1,6 +1,6 @@
 <template>
   <div>
-
+<h3>Albums</h3>
   </div>
 </template>
 
