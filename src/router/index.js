@@ -2,6 +2,9 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import { Auth } from "aws-amplify";
+import AlbumsDetailPage from "../views/AlbumsDetailPage.vue";
+import SignUpPage from "../views/SignupPage.vue";
+import AlbumsPage from "../views/AlbumsPage.vue";
 
 Vue.use(VueRouter);
 
@@ -10,6 +13,23 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home
+  },
+  {
+    path: "/signup",
+    name: "SignUpPage",
+    component: SignUpPage
+  },
+  {
+    path: "/album/:id",
+    name: "AlbumDetailPage",
+    component: AlbumsDetailPage,
+    meta: {requiresAuth: true}
+  },
+  {
+    path: "/albums",
+    name: "AlbumsPage",
+    component: AlbumsPage,
+    meta: {requiresAuth: true}
   },
   {
     path: "/about",
