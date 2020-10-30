@@ -9,49 +9,26 @@ export const getAlbum = /* GraphQL */ `
       ownerId
       name
       createdAt
-      updatedAt
       photos {
         items {
           id
           createdAt
-          updatedAt
-          album {
-            id
-            owner
-            ownerId
-            name
-            createdAt
-            updatedAt
-            photos {
-              nextToken
-            }
+          thumbnail {
+            key
           }
           fullsize {
-            region
-            bucket
             key
           }
-          thumbnail {
-            region
-            bucket
-            key
-          }
-          contentType
           gps {
             latitude
             longitude
-            altitude
           }
-          height
-          width
-          size
-          owner
         }
         nextToken
       }
     }
   }
-`;
+  `;
 export const listAlbums = /* GraphQL */ `
   query ListAlbums(
     $filter: ModelAlbumFilterInput

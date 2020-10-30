@@ -72,6 +72,7 @@ export default {
           file: file.target.files[0],
           id: this.id
         });
+        this.getPhotos();
       } catch (err) {
         console.log(err);
       }
