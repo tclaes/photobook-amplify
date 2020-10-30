@@ -27,7 +27,9 @@ export const albumInfo = {
     },
     async getAlbum(_, albumId) {
       try {
-        return await API.graphql(graphqlOperation(getAlbumQuery, { id: albumId }));
+        return await API.graphql(
+          graphqlOperation(getAlbumQuery, { id: albumId })
+        );
       } catch (err) {
         console.log(err);
       }

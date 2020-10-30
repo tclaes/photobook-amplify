@@ -52,7 +52,7 @@ router.beforeEach(async (to, from, next) => {
   const requiresAuth = to.matched.some(record => record.meta.requiresAuth);
   const isAuthenticated = await Auth.currentUserInfo();
 
-  if (requiresAuth && !isAuthenticated) { 
+  if (requiresAuth && !isAuthenticated) {
     next("/");
   } else {
     next();

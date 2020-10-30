@@ -19,17 +19,17 @@
         "s3:DeleteObject"
     ],
     "s3PermissionsAuthenticatedPublic": "s3:PutObject,s3:GetObject,s3:DeleteObject",
-    "s3PublicPolicy": "Public_policy_77e9d3bc",
+    "s3PublicPolicy": "Public_policy_dadb466f",
     "s3PermissionsAuthenticatedUploads": "s3:PutObject",
-    "s3UploadsPolicy": "Uploads_policy_77e9d3bc",
+    "s3UploadsPolicy": "Uploads_policy_dadb466f",
     "s3PermissionsAuthenticatedProtected": "s3:PutObject,s3:GetObject,s3:DeleteObject",
-    "s3ProtectedPolicy": "Protected_policy_77e9d3bc",
+    "s3ProtectedPolicy": "Protected_policy_dadb466f",
     "s3PermissionsAuthenticatedPrivate": "s3:PutObject,s3:GetObject,s3:DeleteObject",
-    "s3PrivatePolicy": "Private_policy_77e9d3bc",
+    "s3PrivatePolicy": "Private_policy_dadb466f",
     "AuthenticatedAllowList": "ALLOW",
-    "s3ReadPolicy": "read_policy_77e9d3bc",
+    "s3ReadPolicy": "read_policy_dadb466f",
     "s3PermissionsGuestPublic": "DISALLOW",
     "s3PermissionsGuestUploads": "DISALLOW",
     "GuestAllowList": "DISALLOW",
-    "triggerFunction": "NONE"
+    "triggerFunction": "amplifyPhotoProcessor"
 }
