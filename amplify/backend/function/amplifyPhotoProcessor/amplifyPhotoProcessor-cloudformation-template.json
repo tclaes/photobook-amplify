@@ -83,7 +83,7 @@
         "Layers": [],
         "Timeout": "25",
         "Code": {
-          "S3Bucket": "amplify-photobook-dev-130016-deployment",
+          "S3Bucket": "amplify-photobook-dev-123515-deployment",
           "S3Key": "amplify-builds/amplifyPhotoProcessor-314a2b32523635364854-build.zip"
         }
       }
